@@ -117,20 +117,82 @@
         </div>
     </section>
 
-    <!-- Brief Introduction to Products (Optional) -->
+    <!-- About Our Mission Section -->
     <section class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-stone-900 mb-6">Simplify Your Next Adventure</h2>
-            <p class="text-lg text-stone-700 max-w-3xl mx-auto mb-10">
-                From waterproof backpacks to lightweight tents, we've got everything you need to pack smart and explore further. Discover our carefully selected gear designed for every type of adventurer.
+        <div class="container mx-auto px-6 text-center max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-stone-900 mb-6">Our Mission: Empowering Explorers</h2>
+            <p class="text-lg text-stone-700 leading-relaxed mb-8">
+                At Adventure Gear Essentials, we believe that the right gear can transform any journey into an unforgettable adventure. Our mission is to provide outdoor enthusiasts, from casual hikers to seasoned mountaineers, with reliable, high-quality equipment that stands up to the challenges of the wild. We're committed to fostering a love for nature and ensuring every explorer is well-prepared and safe.
             </p>
             <a
-                href="products.html"
+                href="about.html"
                 target="_blank"
                 class="inline-flex items-center px-6 py-3 bg-emerald-600 text-white font-semibold rounded-full shadow-md hover:bg-emerald-700 transition duration-300 transform hover:scale-105"
             >
-                Browse Our Essentials <i data-lucide="package" class="ml-2" style="width: 18px; height: 18px;"></i>
+                Learn More About Us <i data-lucide="info" class="ml-2" style="width: 18px; height: 18px;"></i>
             </a>
+        </div>
+    </section>
+
+    <!-- Featured Categories Section -->
+    <section class="py-16 md:py-24 bg-emerald-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-stone-900 mb-12">
+                Explore Our Top Categories
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="products.html" target="_blank" class="block bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1521401490226-e1791230e9d6?auto=format&fit=crop&q=80&w=600&h=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Backpacks" class="w-full h-48 object-cover rounded-t-xl group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-semibold text-stone-900 mb-2">Backpacks & Bags</h3>
+                        <p class="text-stone-600 text-sm">Carry your world on your back with comfort and durability.</p>
+                    </div>
+                </a>
+                <a href="products.html" target="_blank" class="block bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1504280390367-36db28cc6ba0?auto=format&fit=crop&q=80&w=600&h=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tents" class="w-full h-48 object-cover rounded-t-xl group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-semibold text-stone-900 mb-2">Tents & Shelters</h3>
+                        <p class="text-stone-600 text-sm">Your portable home in the heart of nature.</p>
+                    </div>
+                </a>
+                <a href="products.html" target="_blank" class="block bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1551028150-64b9f39646b4?auto=format&fit=crop&q=80&w=600&h=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Footwear" class="w-full h-48 object-cover rounded-t-xl group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-semibold text-stone-900 mb-2">Footwear</h3>
+                        <p class="text-stone-600 text-sm">Comfort and grip for every step of your journey.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="text-center mt-12">
+                <a
+                    href="products.html"
+                    target="_blank"
+                    class="inline-flex items-center px-6 py-3 bg-emerald-600 text-white font-semibold rounded-full shadow-md hover:bg-emerald-700 transition duration-300 transform hover:scale-105"
+                >
+                    View All Categories <i data-lucide="grid" class="ml-2" style="width: 18px; height: 18px;"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials Snippet (from about page) -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-stone-900 mb-12">
+                Hear From Our Happy Adventurers
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="testimonial-list-snippet">
+                <!-- Testimonial cards will be dynamically inserted here by JavaScript -->
+            </div>
+            <div class="text-center mt-12">
+                <a
+                    href="about.html#testimonials"
+                    target="_blank"
+                    class="inline-flex items-center px-6 py-3 bg-stone-200 text-stone-700 font-semibold rounded-full shadow-md hover:bg-stone-300 transition duration-300 transform hover:scale-105"
+                >
+                    Read All Reviews <i data-lucide="message-square" class="ml-2" style="width: 18px; height: 18px;"></i>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -172,7 +234,7 @@
                     <li><a href="about.html" target="_blank" class="hover:text-emerald-400 transition duration-300 text-sm">Why Us?</a></li>
                     <li><a href="about.html#testimonials" target="_blank" class="hover:text-emerald-400 transition duration-300 text-sm">Reviews</a></li>
                     <li><a href="privacy-policy.html" target="_blank" class="hover:text-emerald-400 transition duration-300 text-sm">Privacy Policy</a></li>
-                    <li><a href="#" target="_blank" class="hover:text-emerald-400 transition duration-300 text-sm">Terms of Service</a></li>
+                    <li><a href="terms-of-service.html" target="_blank" class="hover:text-emerald-400 transition duration-300 text-sm">Terms of Service</a></li>
                 </ul>
             </div>
             <!-- Contact Info -->
@@ -200,7 +262,7 @@
     </footer>
 
     <!-- Full-Screen Cookie Policy Popup -->
-    <div id="cookie-banner" class="fixed inset-0 z-[999] bg-black bg-opacity-80 flex items-center justify-center p-4 transform opacity-0 pointer-events-none transition-opacity duration-500 ease-out">
+  <!--   <div id="cookie-banner" class="fixed inset-0 z-[999] bg-black bg-opacity-80 flex items-center justify-center p-4 transform opacity-0 pointer-events-none transition-opacity duration-500 ease-out">
         <div class="bg-white text-gray-800 p-8 md:p-12 rounded-xl shadow-2xl max-w-lg w-full transform scale-95 transition-transform duration-500 ease-out">
             <div class="flex flex-col items-center text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cookie text-blue-600 mb-6 flex-shrink-0">
@@ -226,7 +288,7 @@
                 </button>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -261,6 +323,61 @@
                 menuIcon.classList.remove('hidden');
                 closeIcon.classList.add('hidden');
             };
+
+            // Testimonial Data (snippet for homepage)
+            const testimonials = [
+                {
+                    id: 1,
+                    name: 'Alex Rivera',
+                    location: 'Colorado, USA',
+                    quote: 'Adventure Gear Essentials has the best quality gear! My new backpack survived the Rockies without a scratch.',
+                    rating: 5
+                },
+                {
+                    id: 2,
+                    name: 'Sarah Chen',
+                    location: 'British Columbia, Canada',
+                    quote: 'Their tent is incredibly light and easy to set up. Perfect for my solo trips!',
+                    rating: 4
+                },
+                {
+                    id: 3,
+                    name: 'Mike Davies',
+                    location: 'Patagonia, Chile',
+                    quote: 'Finally, boots that truly handle all terrains. My feet thank you!',
+                    rating: 5
+                },
+            ];
+
+            // Function to render testimonial cards for the snippet
+            const renderTestimonialCardsSnippet = () => {
+                const testimonialList = document.getElementById('testimonial-list-snippet');
+                testimonialList.innerHTML = ''; // Clear existing content
+                // Render only a few testimonials for the snippet
+                testimonials.slice(0, 3).forEach(testimonial => { // Displaying first 3 testimonials
+                    const testimonialCardHtml = `
+                        <div class="bg-white p-8 rounded-xl shadow-md border border-stone-100 flex flex-col justify-between h-full transform hover:scale-[1.02] transition-transform duration-300">
+                            <div class="mb-4">
+                                <div class="flex text-yellow-500 mb-2">
+                                    ${Array(5).fill().map((_, i) => `
+                                        <i data-lucide="star" class="${i < testimonial.rating ? 'fill-current' : 'text-gray-400'}" style="width: 20px; height: 20px;"></i>
+                                    `).join('')}
+                                </div>
+                                <p class="italic text-stone-700 leading-relaxed">"${testimonial.quote}"</p>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-stone-900 mt-4">- ${testimonial.name}</p>
+                                <p class="text-stone-500 text-sm">${testimonial.location}</p>
+                            </div>
+                        </div>
+                    `;
+                    testimonialList.insertAdjacentHTML('beforeend', testimonialCardHtml);
+                });
+                lucide.createIcons(); // Re-render Lucide icons after adding new HTML
+            };
+
+            // Initial rendering of testimonial snippet
+            renderTestimonialCardsSnippet();
 
             // Cookie banner logic (replicated for each page)
             const cookieBanner = document.getElementById('cookie-banner');
