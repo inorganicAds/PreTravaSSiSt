@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Adventure Gear Essentials</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            min-height: 100vh;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .animate-fadeInUp.delay-200 {
+            animation-delay: 0.2s;
+        }
+
+        /* Utility for Lucide Icons */
+        .lucide {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="font-sans text-stone-800 bg-stone-50 antialiased">
+
+    <!-- Navigation Bar -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <i data-lucide="compass" class="text-emerald-600 mr-2" style="width: 32px; height: 32px;"></i>
+                <a href="index.html" class="text-2xl font-bold text-stone-900">Adventure Gear Essentials</a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-stone-600 hover:text-emerald-600 font-medium transition duration-300 rounded-md py-1 px-2">Home</a>
+                <a href="products.html" target="_blank" class="text-stone-600 hover:text-emerald-600 font-medium transition duration-300 rounded-md py-1 px-2">Gear</a>
+                <a href="about.html" target="_blank" class="text-stone-600 hover:text-emerald-600 font-medium transition duration-300 rounded-md py-1 px-2">Why Us?</a>
+                <a href="about.html#testimonials" target="_blank" class="text-stone-600 hover:text-emerald-600 font-medium transition duration-300 rounded-md py-1 px-2">Reviews</a>
+                <a href="contact.html" target="_blank" class="text-stone-600 hover:text-emerald-600 font-medium transition duration-300 rounded-md py-1 px-2">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-stone-600 hover:text-emerald-600 focus:outline-none p-2 rounded-md">
+                    <i data-lucide="menu" class="menu-icon" style="width: 28px; height: 28px;"></i>
+                    <i data-lucide="x" class="close-icon hidden" style="width: 28px; height: 28px;"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu-overlay" class="md:hidden bg-white shadow-lg py-4 border-t border-stone-100 hidden animate-slideDown">
+            <nav class="flex flex-col items-center space-y-4">
+                <a href="index.html" class="text-stone-700 hover:text-emerald-600 font-medium transition duration-300 w-full text-center py-2 px-4 rounded-md" onclick="closeMobileMenu()">Home</a>
+                <a href="products.html" target="_blank" class="text-stone-700 hover:text-emerald-600 font-medium transition duration-300 w-full text-center py-2 px-4 rounded-md" onclick="closeMobileMenu()">Gear</a>
+                <a href="about.html" target="_blank" class="text-stone-700 hover:text-emerald-600 font-medium transition duration-300 w-full text-center py-2 px-4 rounded-md" onclick="closeMobileMenu()">Why Us?</a>
+                <a href="about.html#testimonials" target="_blank" class="text-stone-700 hover:text-emerald-600 font-medium transition duration-300 w-full text-center py-2 px-4 rounded-md" onclick="closeMobileMenu()">Reviews</a>
+                <a href="contact.html" target="_blank" class="text-stone-700 hover:text-emerald-600 font-medium transition duration-300 w-full text-center py-2 px-4 rounded-md" onclick="closeMobileMenu()">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Terms of Service Hero Section -->
+    <section class="relative bg-gradient-to-r from-emerald-600 to-emerald-800 text-white py-16 md:py-24 overflow-hidden">
+        <div class="absolute inset-0 bg-pattern-emerald opacity-10"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 animate-fadeInUp">
+                Terms of Service
+            </h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto animate-fadeInUp delay-200">
+                Understanding your rights and responsibilities when using our Service.
+            </p>
+        </div>
+    </section>
+
+    <!-- Terms of Service Content Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="prose prose-lg text-stone-700 leading-relaxed">
+                <p><strong>Last updated: July 10, 2025</strong></p>
+
+                <p>Welcome to Adventure Gear Essentials! These Terms of Service ("Terms") govern your use of our website and services ("Service"). By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the terms, then you may not access the Service.</p>
+
+                <h3 class="text-2xl font-bold text-stone-900 mt-8 mb-4">1. Accounts</h3>
+                <p>When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.</p>
+                <p>You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service.</p>
+                <p>You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.</p>
+
+                <h3 class="text-2xl font-bold text-stone-900 mt-8 mb-4">2. Intellectual Property</h3>
+                <p>The Service and its original content, features and functionality are and will remain the exclusive property of Adventure Gear Essentials and its licensors.</p>
+                <p>Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Adventure Gear Essentials.</p>
+
+                <h3 class="text-2xl font-bold text-stone-900 mt-8 mb-4">3. Links To Other Web Sites</h3>
+                <p>Our Service may contain links to third-party web sites or services that are not owned or controlled by Adventure Gear Essentials.</p>
+                <p>Adventure Gear Essentials has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Adventure Gear Essentials shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.</p>
+                <p>We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.</p>
+
+                <h3 class="text-2xl font-bold text-stone-900 mt-8 mb-4">4. Termination</h3>
+                <p>We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</p>
+                <p>Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service.</p>
+
+                <h3 class="text-2xl font-bold text-stone-900 mt-8 mb-4">5. Indemnification</h3>
+                <p>You agree to defend, indemnify and hold harmless Adventure Gear Essentials and its licensee and licensors, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees), resulting from or arising out of a) your use and access of the Service, or b) a breach of these Terms.</p>
+
+                <h3 class="text-2xl font-bold text-stone-900 mt-8 mb-4">6. Disclaimer</h3>
+                <p>Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.</p>
+
+                <h3 class="text-2xl font-bold text-stone-900 mt-8 mb-4">7. Governing Law</h3>
+                <p>These Terms shall be governed and construed in accordance with the laws of [Your State/Country], without regard to its conflict of law provisions.</p>
+                <p>Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.</p>
+
+                <h3 class="text-2xl font-bold text-stone-900 mt-8 mb-4">8. Changes To Terms</h3>
+                <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
+                <p>By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.</p>
+
+                <h3 class="2xl font-bold text-stone-900 mt-8 mb-4">Contact Us</h3>
+                <p>If you have any questions about these Terms, please contact us:</p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li>By email: info@adventuregear.com</li>
+                    <li>By visiting this page on our website: <a href="contact.html" target="_blank" class="text-emerald-600 hover:underline">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="bg-emerald-700 text-white py-16 md:py-20 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Ready to Explore?
+            </h2>
+            <p class="text-lg md:text-xl mb-8 opacity-90">
+                Browse our full range of adventure gear and prepare for your next great outdoor challenge.
+            </p>
+            <a
+                href="products.html"
+                target="_blank"
+                class="inline-flex items-center px-8 py-4 bg-white text-emerald-700 font-bold rounded-full shadow-lg hover:bg-stone-100 transition duration-300 transform hover:scale-105"
+            >
+                Find Your Gear Today <i data-lucide="shopping-bag" class="ml-2" style="width: 20px; height: 20px;"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-300 py-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- About Us -->
+            <div>
+                <h3 class="text-xl font-semibold text-white mb-4">Adventure Gear Essentials</h3>
+                <p class="text-sm">
+                    Your trusted source for high-quality outdoor gear. We equip you for unforgettable adventures.
+                </p>
+            </div>
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-semibold text-white mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-emerald-400 transition duration-300 text-sm">Home</a></li>
+                    <li><a href="products.html" target="_blank" class="hover:text-emerald-400 transition duration-300 text-sm">Gear</a></li>
+                    <li><a href="about.html" target="_blank" class="hover:text-emerald-400 transition duration-300 text-sm">Why Us?</a></li>
+                    <li><a href="about.html#testimonials" target="_blank" class="hover:text-emerald-400 transition duration-300 text-sm">Reviews</a></li>
+                    <li><a href="privacy-policy.html" target="_blank" class="hover:text-emerald-400 transition duration-300 text-sm">Privacy Policy</a></li>
+                    <li><a href="terms-of-service.html" target="_blank" class="hover:text-emerald-400 transition duration-300 text-sm">Terms of Service</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-xl font-semibold text-white mb-4">Contact Us</h3>
+                <p class="text-sm">Email: info@adventuregear.com</p>
+                <p class="text-sm">Phone: +1 (987) 654-3210</p>
+                <div class="flex space-x-4 mt-4">
+                    <!-- Social media icons directly using Lucide SVG paths -->
+                    <a href="#" target="_blank" class="text-stone-400 hover:text-white transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentCo
